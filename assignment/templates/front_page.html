@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci_sequence</title>
+</head>
+<body>
+<form action="fibanocci" method="POST">
+    {% csrf_token %}
+    <h4 style="color:blue">Enter the fibanocci number:<input type="text" name="num" placeholder="fibanocci sequence number"></h4>
+    <button type="submit" style="color:red">Get Result</button><br>
+    <h3>{{m}}</h3>
+
+
+</form>
+</body>
+</html>
+{% endblock %}
